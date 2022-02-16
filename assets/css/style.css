@@ -20,18 +20,28 @@
 }
 
 /* Parte Menu  */
+.menu-left li{
+    padding: 8px 0;
+}
 
 nav li{
     list-style: none;
     display: inline-block;
     vertical-align: middle;
+    padding: 8px;
 }
+nav li:hover {
+    border-bottom: solid 2px #0061ff;
+}
+
 nav li a{
+    display: inline-block;
     text-decoration: none;
-    margin: 15px;
+    padding: 8px;
     color: black;
-    
+    height: 100%;
 }
+
 .menu-right{
     display: inline-block;
     float: right;
@@ -39,7 +49,7 @@ nav li a{
     
 }
 .menu-left{
-    margin-top: 15px;
+    
     display: inline-block;
     float: left;
     
@@ -50,7 +60,7 @@ nav{
     display: inline-block;
     position: fixed;
     top: 0;
-    padding: 8px;
+    padding: 0 10px;
     background-color: white;
     z-index: 1;
     
@@ -62,12 +72,31 @@ nav .button{
     padding: 8px;
     border-radius: 5px;
 }
+.dropdown-menu-padre{
+    position: relative;
+
+}
+.dropdown-menu-figlio{
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 0.8em;
+    width: 200px;
+}
+.dropdown-menu-padre:hover .dropdown-menu-figlio { 
+    display: block;
+}
+
 
 /* Prima sezione  */
 
 .section-1{
     background-color: #b4d0e7;
-    margin-top: 70px;
+    margin-top: 50px;
     padding-top:  50px; ;
     text-align: center;
 
@@ -613,7 +642,7 @@ footer{
 .container-footer div{
     display: inline-block;
     margin: 100px 0;
-    margin-right: 70px;
+    margin-right: 50px;
 }
 .container-footer h5{
     margin-bottom: 30px;
