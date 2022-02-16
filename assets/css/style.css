@@ -19,7 +19,7 @@
     clear: both;
 }
 
-
+/* Parte Menu  */
 
 nav li{
     list-style: none;
@@ -63,7 +63,7 @@ nav .button{
     border-radius: 5px;
 }
 
-
+/* Prima sezione  */
 
 .section-1{
     background-color: #b4d0e7;
@@ -74,8 +74,7 @@ nav .button{
 }
 
 .container-section1{
-    display: inline-block;
-    
+    display: inline-block;  
 }
 
 .text-section1{
@@ -106,7 +105,7 @@ nav .button{
 }
 .img-section1 img{
     width: 100%;
-    margin-bottom: -100px;
+    margin-bottom: -200px;
 }
 h1{
     font-size: 4em;
@@ -549,8 +548,7 @@ list-style-type: none;
 
 .section-6{
     width: 70%;
-    margin: 100px auto;
-    
+    margin: 100px auto;  
 }
 .section-6 h3{
     margin-bottom: 100px;
@@ -560,11 +558,32 @@ list-style-type: none;
     width:8% ;
     text-align: right;
 }
+.domande-section6:hover .fa-angle-down {
+    display: none;
+
+}
+.domande-section6 .fa-angle-up {
+    display: none;
+
+}
+.domande-section6:hover .fa-angle-up {
+    display: inline-block;
+
+}
+
+
 .section-6 span{
     display: inline-block;
     width: 90% ;
-    padding: 35px 0;
+    margin: 35px 0;
     font-weight: bold;
+}
+.section-6 p{
+    margin-bottom: 35px;
+    display: none;
+}
+.domande-section6:hover p{
+    display: inline-block;
 }
 
 .section-6 hr{
